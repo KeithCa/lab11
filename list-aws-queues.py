@@ -11,7 +11,7 @@ from boto.exception import SQSError
 import sys
 import urllib2
 
-response = urllib2.urlopen('http://ec2-­‐52-­‐30-­‐7-­‐5.eu-­‐west-­‐1.compute.amazonaws.com:81/key')
+response = urllib2.urlopen('http://ec2-52-30-7-5.eu‐west-1.compute.amazonaws.com:81/key')
 
 # Get the keys from a specific url and then use them to connect to AWS Service 
 access_key_id = response.read()
