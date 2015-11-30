@@ -23,5 +23,7 @@ first_arg = sys.argv[1]
 
 # Get a list of the queues that exists and then print the list out
 q = conn.get_queue(first_arg)
-conn.delete_queue(q)
+m = Message()
+m.set_body('This is my first message.')
+q.write(m)
 
