@@ -17,9 +17,9 @@ first, second= files.split(':', 2)
 access_key_id = first
 secret_access_key = second
 my_queue = sys.argv
-
+q = conn.get_queue(myqueue)
 # Set up a connection to the AWS service. 
 conn = boto.sqs.connect_to_region("eu-west-1", aws_access_key_id=access_key_id, aws_secret_access_key=secret_access_key)
 # Get a list of the queues that exists and then print the list out
-conn.delete_queue(my_queue)
+conn.delete_queue(q)
 
