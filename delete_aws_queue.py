@@ -23,5 +23,5 @@ first_arg = sys.argv[1]
 
 # Get a list of the queues that exists and then print the list out
 q = conn.get_queue(first_arg)
-q.count()
+conn.delete_queue(q)
 
