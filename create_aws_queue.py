@@ -22,5 +22,5 @@ conn = boto.sqs.connect_to_region("eu-west-1", aws_access_key_id=access_key_id, 
 first_arg = sys.argv[1]
 
 # Get a list of the queues that exists and then print the list out
-conn.create_queue(first_arg)
+conn.create_queue(c12406518)
 
